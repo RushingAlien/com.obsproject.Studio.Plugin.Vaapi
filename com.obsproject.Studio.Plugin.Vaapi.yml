@@ -8,7 +8,7 @@ seperate-locales: false
 appstream-compose: false
 build-options:
   prefix: /app/plugins/Vaapi
-  libdir: lib/obs-plugins
+  libdir: lib/
 modules:
   - name: vaapi
     buildsystem: meson
