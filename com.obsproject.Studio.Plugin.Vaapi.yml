@@ -4,11 +4,10 @@ runtime: com.obsproject.Studio
 runtime-version: stable
 sdk: org.kde.Sdk//6.4
 build-extension: true
-seperate-locales: false
+separate-locales: false
 appstream-compose: false
 build-options:
   prefix: /app/plugins/Vaapi
-  libdir: lib/
 modules:
   - name: vaapi
     buildsystem: meson
@@ -24,7 +23,7 @@ modules:
         tag: 0.1.0
         commit: 4eac24b412f12e9bbeff0bea934d16ab83e69c57
         x-checker-data:
-          - type: git
-            tag-pattern: ^v([\d.]+)
+            type: git
+            tag-pattern: ^([\d.]+)
       - type: file
         path: com.obsproject.Studio.Plugin.Vaapi.metainfo.xml
